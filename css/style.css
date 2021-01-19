@@ -14,6 +14,7 @@
 .menus {
     display: flex;
     justify-content: flex-end;
+    padding: 5px 10px;
 }
 
 .menus li {
@@ -44,6 +45,33 @@
     height: auto;
 }
 
+.search-box form input[type='text'] {}
+
+.search-box .link {
+    /* background-color: red; */
+    padding: 12px 16px;
+    margin: 5px;
+}
+
+.search-box .link a {
+    color: rgb(32, 32, 32);
+    /* margin: 10px; */
+    /* background-color: red; */
+    padding: 12px 13px;
+    font-size: 14px;
+    background-color: rgba(236, 236, 236, 0.76);
+}
+
+.search-box .link a:first-child {
+    margin-right: 5px;
+}
+
+.search-box .link a:hover {
+    /* border: 1px solid rgb(208 208 208 / 76%); */
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #b5b5b5bf, 1px 1px 3px #b5b5b5bf
+}
+
 .link {
     margin-top: 10px;
 }
@@ -62,4 +90,26 @@
     padding: 14px 20px;
     width: 500px;
     box-shadow: 2px 2px 4px #b7b7b74d, -2px -2px 4px #a7a7a74a;
+}
+
+.search-box form input[type="text"]:focus {
+    outline: none;
+}
+
+footer {
+    border-top: 1px solid rgb(212, 212, 212);
+    background-color: rgb(238, 238, 238);
+    /* height: 80px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer li a {
+    color: #6b6b6b;
+    font-size: 13px;
 }
